@@ -3,6 +3,7 @@ var outputText = document.querySelector('#translation')
 var buttonCall = document.querySelector('#btn-translate')
 var api = "https://api.funtranslations.com/translate/minion.json";
 
+// FetchData
 function fetchData(){
   let userSpeak = inputText.value
   fetch(`${api}?text=${userSpeak}`)
